@@ -13,7 +13,7 @@
       }
     ],
     "env": {
-      "MONGODB_URI": "@project_app_mongodb_uri"
+      "MONGODB_URI": "mongodb+srv://nityabalar:FcSVfu2I7W6ohLX2@cluster0.bdozy4l.mongodb.net/project_app"
     }
   }
   
