@@ -42,7 +42,7 @@ app.post('/register',async(req,res)=>{
 
             let token = jwt.sign({email: email, userid: newuser._id},"sabhhfbhs");
             res.cookie("token",token);
-            res.send("registered");
+            res.redirect("/profile");
         });
 
     });
@@ -145,4 +145,7 @@ function isLoggedin(req,res,next){
     next();
 }
 
-app.listen(3000);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
